@@ -1,0 +1,6 @@
+{
+  "name": "APIN Employee Pulse Survey",
+  "description": "Expectations for the First 100 Days and Beyond - APIN Internal Employee Pulse Survey (54 questions across Sections A to H).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

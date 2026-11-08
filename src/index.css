@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-apin-green: #83D806;
+  --color-apin-blue: #37C8E0;
+  --color-apin-teal: #045877;
+  --color-apin-teal-dark: #02384d;
+  --color-apin-teal-light: #06729a;
+  --color-apin-bg: #F5FAFB;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+:root {
+  --apin-green: #83D806;
+  --apin-blue: #37C8E0;
+  --apin-teal: #045877;
+  --apin-teal-dark: #02384d;
+  --apin-teal-light: #06729a;
+  --apin-bg: #F5FAFB;
+}
+
+/* Base custom utility styles */
+html {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Custom focus ring styling for WCAG AA compliance */
+*:focus-visible {
+  outline: 2px solid #045877;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  body {
+    background: #ffffff !important;
+    padding: 0 !important;
+  }
+  .no-print, header, footer:not(.page-footer) {
+    display: none !important;
+  }
+  article, section, .question-card {
+    page-break-inside: avoid !important;
+  }
+}
